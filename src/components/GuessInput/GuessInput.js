@@ -11,7 +11,8 @@ function GuessInput() {
     }}
     className="guess-input-wrapper">
       <label htmlFor="guess-input">Enter guess:</label>
-      <input 
+      <input
+        required
         value={guess}
         onChange={e => setGuess(e.target.value.toUpperCase())} 
         id="guess-input" 
