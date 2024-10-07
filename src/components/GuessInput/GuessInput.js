@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TextInput() {
+function GuessInput() {
   const [guess, setGuess] = React.useState('');
   return (
     <form 
@@ -22,4 +22,4 @@ function TextInput() {
   );
 }
 
-export default TextInput;
+export default GuessInput;
