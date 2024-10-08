@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Banner({ status, tries, answer }) {
+function GameOverBanner({ status, tries, answer }) {
   if (status === 'won') {
     return (
       <div className="happy banner">
@@ -19,4 +19,4 @@ function Banner({ status, tries, answer }) {
   }
 }
 
-export default Banner;
+export default GameOverBanner;
