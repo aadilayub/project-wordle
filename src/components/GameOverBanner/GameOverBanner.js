@@ -1,12 +1,12 @@
 import React from 'react';
 
-function GameOverBanner({ status, tries, answer }) {
+function GameOverBanner({ status, numOfGuesses, answer }) {
   if (status === 'won') {
     return (
       <div className="happy banner">
         <p>
           <strong>Congratulations!</strong> Got it in{' '}
-          <strong>{tries} guesses</strong>.
+          <strong>{numOfGuesses} guesses</strong>.
         </p>
       </div>
     );

@@ -39,7 +39,7 @@ function Game() {
         gameStatus !== 'running' && 
         <GameOverBanner 
           status={gameStatus} 
-          tries={guesses.length} 
+          numOfGuesses={guesses.length} 
           answer={answer} 
         /> 
       }
