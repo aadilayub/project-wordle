@@ -1,6 +1,6 @@
 import React from 'react';
 
-function GuessInput({ handleSubmitGuess }) {
+function GuessInput({ handleSubmitGuess, disabled }) {
   const [tentativeGuess, setTentativeGuess] = React.useState('');
   return (
     <form
@@ -12,6 +12,7 @@ function GuessInput({ handleSubmitGuess }) {
       className="guess-input-wrapper">
       <label htmlFor="guess-input">Enter guess:</label>
       <input
+        disabled={disabled}
         required
         value={tentativeGuess}
         onChange={e => setTentativeGuess(e.target.value.toUpperCase())}
